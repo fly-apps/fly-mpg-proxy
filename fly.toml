@@ -1,0 +1,32 @@
+app = 'fly-mpg-proxy'
+primary_region = 'lax'
+
+[build]
+
+[env]
+  CLUSTER_ID = 'YOUR-CLUSTER-ID-HERE'
+
+[http_service]
+  internal_port = 7000
+  force_https = true
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 5432
+
+  [[services.ports]]
+    port = 5432
+    handlers = ['proxy_proto']
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 6432
+
+  [[services.ports]]
+    port = 6432
+    handlers = ['proxy_proto']
+
+[[vm]]
+  memory = '256mb'
+  cpu_kind = 'shared'
+  cpus = 1

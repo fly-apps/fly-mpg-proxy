@@ -1,0 +1,4 @@
+# Use IP addresses or CIDR notation to whitelist - default has all IPs whitelisted.
+
+0.0.0.0/0
+::/0
