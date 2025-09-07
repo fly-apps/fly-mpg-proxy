@@ -1,10 +1,3 @@
-app = 'fly-mpg-proxy'
-primary_region = 'lax'
-
-[build]
-
-[env]
-  CLUSTER_ID = 'YOUR-CLUSTER-ID-HERE'
 
 [http_service]
   internal_port = 7000
