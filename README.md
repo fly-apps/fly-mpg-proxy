@@ -6,7 +6,7 @@ Fly MPG Proxy enables you to connect to [Fly Managed Postgres](https://fly.io/do
 
 ## How to install Fly MPG Proxy
 
-Installing Fly MPG Proxy is as easy to installing any other app on Fly!
+Installing Fly MPG Proxy is as easy as installing any other app on Fly!
 
 Find the Cluster ID for your MPG Cluster by running `fly mpg list`.
 
@@ -101,6 +101,10 @@ Fly MPG Proxy can be configured so that only certain IP addresses can connect.
 Open the file `ip-whitelist.txt` and add the IP addresses or CIDR notation for networks that you would like to be able to access the Fly Managed Postgres Cluster.  Make sure to comment out or remove the entries for `0.0.0.0/0` and `::0/0`.
 
 Once you have this file populated with only the IP addresses and networks you would like to allow to connect, run `fly deploy` to update the server with your new whitelist.
+
+## Support
+
+MPG Proxy is a standalone application that you may install on fly.io to gain external access to MPG Clusters.  It is not a part of the Managed Postgres service and is not supported by fly.io.
 
 ## Cheers!
 
