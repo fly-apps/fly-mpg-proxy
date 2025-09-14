@@ -15,7 +15,7 @@ Run the following commands:
 ```
 mkdir mpg-proxy
 cd mpg-proxy
-fly launch --from=https://github.com/symkat/fly-mpg-proxy --secret CLUSTER_ID=Your-Cluster-ID
+fly launch --from=https://github.com/fly-apps/fly-mpg-proxy --secret CLUSTER_ID=Your-Cluster-ID
 ```
 
 ### Follow The Prompts
